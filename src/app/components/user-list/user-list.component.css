@@ -1,0 +1,99 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.table-container {
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th.mat-header-cell {
+    background-color: #0033a0 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 20px;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.add-user-button {
+    height: 48px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    margin-bottom: 30px;
+}
+
+.add-user-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+
+.mat-header-cell.mat-column-actions,
+.mat-cell.mat-column-actions {
+    text-align: center;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+}
+
+th {
+    background-color: #0033a0;
+    color: #ffffff;
+    padding: 20px;
+    font-weight: 600;
+}
+
+td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #424242;
+}
+
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .actions-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+}
+
